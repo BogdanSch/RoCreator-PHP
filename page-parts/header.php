@@ -25,7 +25,7 @@
                 </div>
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="index.php" class="active">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li class="header__item sub-games">
                         <button class="opener">Games</button>

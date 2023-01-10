@@ -22,16 +22,19 @@ $(document).ready(function(){
 //Header links
 $(document).ready(function(){
     let path = window.location.pathname;
-    let page = path.split("/").pop();
-    console.log(page);
+    let pageName = path.split("/").pop().split(".")[0];
+    console.log(pageName);
 
     const allHeaderLinks = document.querySelectorAll(".header__list .header__item");
 
     allHeaderLinks.forEach(
         (element, key) =>{
-            element.addEventListener("click", (e) =>{
-                 $(".header__list .header__item").toggleClass('active');
-            });
+            if(element.querySelector("a").innerHTML === pageName){
+                element.classList.add("active");
+            }
+            // element.addEventListener("click", (e) =>{
+            //      $(".header__list .header__item").toggleClass('active');
+            // });
         }
     );
 });
