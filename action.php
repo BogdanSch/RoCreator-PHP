@@ -10,9 +10,15 @@ function out($count, $offset, $soft_type, $search_platform)
     global $conn;
     $arr_out = [];
     try {
-        if ($search_platform == "All") {
-            if (!$result = $conn->query("SELECT * FROM `games_table` ORDER BY publish_date DESC LIMIT " . $count . " OFFSET $offset")) {
-                throw new Exception('Error selection from table `news_table`: [' . $conn->error . ']');
+        if ($search_platform == "all") {
+            if ($soft_type == "game") {
+                if (!$result = $conn->query("SELECT * FROM `games_table` ORDER BY publish_date DESC LIMIT " . $count . " OFFSET $offset")) {
+                    throw new Exception('Error selection from table `news_table`: [' . $conn->error . ']');
+                }
+            }else{
+                if (!$result = $conn->query("SELECT * FROM `soft_table` ORDER BY publish_date DESC LIMIT " . $count . " OFFSET $offset")) {
+                    throw new Exception('Error selection from table `news_table`: [' . $conn->error . ']');
+                }
             }
         } else {
             if ($soft_type == "game") {
@@ -33,10 +39,10 @@ function out($count, $offset, $soft_type, $search_platform)
     }
     return $arr_out;
 }
-function get_post_item($row)
+function get_post_item($row, $soft_type)
 {
-    $str_start = '<li class="games__item card">
-    <img src="img/'.($row['game_image']).'" class="games__img" alt="">
+    $str_start = '<li class="'.$soft_type.'__item card">
+    <img src="img/'.($row['game_image']).'" class="'.$soft_type.'__img" alt="">
     <div class="description">
         <div class="text">
             <h5>'.($row['game_title']).'</h5>

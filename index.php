@@ -54,7 +54,7 @@ include("page-parts/header.php");
 				$out = out(5, 0, "game", "Roblox");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_post_item($row);
+						echo get_post_item($row, "games");
 					}
 				} else {
 					echo "Sorry there're no games";
@@ -84,13 +84,13 @@ include("page-parts/header.php");
 		<div class="software__wrap">
 			<ul class="software__list" id="pc-soft">
 				<?php
-				$out = out(5, 0, "game", "Android");
+				$out = out(5, 0, "software", "all");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_post_item($row);
+						echo get_post_item($row, "software");
 					}
 				} else {
-					echo "Sorry there're no games";
+					echo "Sorry there's no software";
 				}
 				?>
 				<li class="software__item card">
@@ -128,5 +128,4 @@ include("page-parts/header.php");
 		</div>
 	</div>
 </section>
-
 <?php include("page-parts/footer.php"); ?>
