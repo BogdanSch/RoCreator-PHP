@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -42,7 +40,7 @@
                         <a href="soft.php">Soft</a>
                     </li>
                     <li class="header__item">
-                        <a href="">Portfolio</a>
+                        <a href="privacy.php">Privacy</a>
                     </li>
                 </ul>
             </div>

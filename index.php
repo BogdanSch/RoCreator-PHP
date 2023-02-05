@@ -13,7 +13,7 @@ include("page-parts/header.php");
 				</p>
 				<a class="btn btn--more" href="#about">More</a>
 			</div>
-			<img src="img/image1 1.png" class="intro-img" alt="intro-img">
+			<img src="img/image-intro.png" class="intro-img" alt="intro-img">
 		</div>
 	</div>
 </section>
@@ -54,13 +54,13 @@ include("page-parts/header.php");
 				$out = out(5, 0, "game", "Roblox");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_post_item($row, "games");
+						echo get_game_item($row);
 					}
 				} else {
 					echo "Sorry there're no games";
 				}
 				?>
-				<a class="btn btn--more center-align" href="games-roblox.html">Get More</a>
+				<a class="btn btn--more center-align" href="games-roblox.php">Get More</a>
 			</ul>
 		</div>
 	</div>
@@ -87,43 +87,13 @@ include("page-parts/header.php");
 				$out = out(5, 0, "software", "all");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_post_item($row, "software");
+						echo get_soft_item($row);
 					}
 				} else {
 					echo "Sorry there's no software";
 				}
 				?>
-				<li class="software__item card">
-					<img src="img/image3 1.png" class="software__img" alt="calc-pc">
-					<div class="description">
-						<div class="text">
-							<h5>Calculator for pc</h5>
-							<p>This is an important thing ever. This calculator has a nice design and can do all
-								operations what you need. Made for windows devices. It doesn't have any virus</p>
-						</div>
-						<div class="type">
-							<span>Type: </span> deckstop
-						</div>
-						<a href="#" class="btn--play">Get</a>
-					</div>
-					<img class="bg--img" src="img/background.png" alt="bg">
-				</li>
-				<li class="software__item card">
-					<img src="img/image4.png" alt="calc-android" class="software__img">
-					<div class="description">
-						<div class="text">
-							<h5>Calculator for android</h5>
-							<p>This is an important thing ever. This calculator has a nice design and can do all
-								operations what you need. Made for android devices. It doesn't have any virus</p>
-						</div>
-						<div class="type">
-							<span>Type: </span> android
-						</div>
-						<button class="btn--play unfinished">Get</button>
-					</div>
-					<img class="bg--img" src="img/background (2).png" alt="bg">
-				</li>
-				<a class="btn btn--more center-align" href="soft.html">Get More</a>
+				<a class="btn btn--more center-align" href="soft.php">Get More</a>
 			</ul>
 		</div>
 	</div>

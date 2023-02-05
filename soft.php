@@ -1,4 +1,7 @@
-<?php include("page-parts/header.php"); ?>
+<?php
+require_once("action.php");
+include("page-parts/header.php");
+?>
 <section class="about introducing">
 	<div class="container">
 		<div class="about__wrap">
@@ -28,34 +31,16 @@
 	<div class="container">
 		<div class="software__wrap">
 			<ul class="software__list" id="pc-soft">
-				<li class="software__item card">
-					<img src="img/image3 1.png" class="software__img" alt="">
-					<div class="description">
-						<div class="text">
-							<h5>Calculator for pc</h5>
-							<p>This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for windows devices. It doesn't have any virus</p>
-						</div>
-						<div class="type">
-							<span>Type: </span> deckstop
-						</div>
-						<a href="#" class="btn--play">Get</a>
-					</div>
-					<img class="bg--img" src="img/background.png" alt="bg">
-				</li>
-				<li class="software__item card">
-					<img src="img/image4.png" alt="" class="software__img">
-					<div class="description">
-						<div class="text">
-							<h5>Calculator for android</h5>
-							<p>This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for android devices. It doesn't have any virus</p>
-						</div>
-						<div class="type">
-							<span>Type: </span> android
-						</div>
-						<button class="btn--play unfinished">Get</button>
-					</div>
-					<img class="bg--img" src="img/background (2).png" alt="">
-				</li>
+				<?php
+				$out = out(5, 0, "software", "all");
+				if (count($out) > 0) {
+					foreach ($out as $row) {
+						echo get_soft_item($row);
+					}
+				} else {
+					echo "Sorry there's no software";
+				}
+				?>
 			</ul>
 		</div>
 	</div>

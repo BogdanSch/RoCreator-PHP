@@ -39,10 +39,10 @@ function out($count, $offset, $soft_type, $search_platform)
     }
     return $arr_out;
 }
-function get_post_item($row, $soft_type)
+function get_game_item($row)
 {
-    $str_start = '<li class="'.$soft_type.'__item card">
-    <img src="img/'.($row['game_image']).'" class="'.$soft_type.'__img" alt="">
+    $str_start = '<li class="games__item card">
+    <img src="img/'.($row['game_image']).'" class="games__img" alt="game image">
     <div class="description">
         <div class="text">
             <h5>'.($row['game_title']).'</h5>
@@ -53,6 +53,26 @@ function get_post_item($row, $soft_type)
         $link = '<a href="'.($row['game_link']).'" target="_blank" class="btn--play">Play</a>';
     }else{
         $link = '<button class="btn--play unfinished">Play</button>';
+    }
+    $str_end = '</div>
+    <img class="bg--img" src="img/background.png" alt="background">
+</li>';
+    return $str_start.$link.$str_end;
+}
+function get_soft_item($row)
+{
+    $str_start = '<li class="games__item card">
+    <img src="img/'.($row['soft_image']).'" class="games__img" alt="soft image">
+    <div class="description">
+        <div class="text">
+            <h5>'.($row['soft_title']).'</h5>
+            <p>'.($row['soft_content']).'</p>
+        </div><div class="type"><span>Type: </span> '.$row['soft_type'].'</div>';
+    $link = "";
+    if($row['soft_available']){
+        $link = '<a href="'.($row['soft_link']).'" target="_blank" class="btn--play">Download</a>';
+    }else{
+        $link = '<button class="btn--play unfinished">Download</button>';
     }
     $str_end = '</div>
     <img class="bg--img" src="img/background.png" alt="background">

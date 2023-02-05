@@ -18,7 +18,7 @@
 						</p>
 					</i>
 				</a>
-				<a href="instagram" target="_blank" class="soc-link">
+				<a href="https://www.instagram.com/bogmira_777/" target="_blank" class="soc-link">
 					<i class="fa-brands fa-instagram">
 						<p class="hint">
 							Instagram
