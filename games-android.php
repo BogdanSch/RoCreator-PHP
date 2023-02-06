@@ -37,7 +37,7 @@ include("page-parts/header.php");
 				$out = out(5, 0, "game", "Android");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_game_item($row);
+						echo get_post_item($row, "game");
 					}
 				} else {
 					echo "Sorry there're no games";

@@ -29,9 +29,9 @@ $(document).ready(function(){
 
     allHeaderLinks.forEach(
         (element, key) =>{
-            if(element.querySelector("a").innerHTML === pageName){
-                element.classList.add("active");
-            }
+            // if(element.querySelector("a").innerHTML === pageName){
+            //     element.classList.add("active");
+            // }
             // element.addEventListener("click", (e) =>{
             //      $(".header__list .header__item").toggleClass('active');
             // });

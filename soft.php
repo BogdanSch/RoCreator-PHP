@@ -35,7 +35,7 @@ include("page-parts/header.php");
 				$out = out(5, 0, "software", "all");
 				if (count($out) > 0) {
 					foreach ($out as $row) {
-						echo get_soft_item($row);
+						echo get_post_item($row, "soft");
 					}
 				} else {
 					echo "Sorry there's no software";
