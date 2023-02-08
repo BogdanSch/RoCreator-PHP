@@ -37,7 +37,7 @@
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="soft.php">Soft</a>
+                        <a href="soft.php">Software</a>
                     </li>
                     <li class="header__item">
                         <a href="privacy.php">Privacy</a>

@@ -18,23 +18,3 @@ $(document).ready(function(){
         $('body').toggleClass('lock');
     });
 });
-
-//Header links
-$(document).ready(function(){
-    let path = window.location.pathname;
-    let pageName = path.split("/").pop().split(".")[0];
-    console.log(pageName);
-
-    const allHeaderLinks = document.querySelectorAll(".header__list .header__item");
-
-    allHeaderLinks.forEach(
-        (element, key) =>{
-            // if(element.querySelector("a").innerHTML === pageName){
-            //     element.classList.add("active");
-            // }
-            // element.addEventListener("click", (e) =>{
-            //      $(".header__list .header__item").toggleClass('active');
-            // });
-        }
-    );
-});
