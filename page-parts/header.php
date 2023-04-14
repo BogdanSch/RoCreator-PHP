@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="JtEQNzTX0hiaDx7cD4u73jiHjTo4PjkSEbWy7IkZBSg" />
     <title>RoCreator</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">

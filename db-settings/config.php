@@ -1,5 +1,5 @@
 <?php
-const SERVERNAME = "127.0.0.1";
+const SERVERNAME = "localhost";
 const DBNAME = "ro_news";
 const USERNAME = "root";
 const PASSWORD = "";
