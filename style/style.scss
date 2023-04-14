@@ -14,6 +14,14 @@ body {
 body.lock {
 	overflow: hidden;
 }
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: rgb(224, 224, 224);
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(143, 143, 143);
+	border-radius: 50px;
+}
 //Mixin - Start
 
 //Mixin - End
@@ -156,14 +164,6 @@ p.hint {
 		color: $accent;
 		font-weight: 500;
 	}
-}
-&::-webkit-scrollbar {
-	width: 7px;
-	background-color: rgb(224, 224, 224);
-}
-&::-webkit-scrollbar-thumb {
-	background: rgb(143, 143, 143);
-	border-radius: 50px;
 }
 .bg-color {
 	&::after {
