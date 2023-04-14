@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrap">
-                <div class="logo">
+                <div class="header__logo">
                     <a class="logo" href="index.php">RoCreator</a>
                 </div>
                 <div class="header__burger">

@@ -220,6 +220,10 @@ button {
 	& .container{
 		width: 90%;
 	}
+	.logo{
+		font-size: 20px;
+		font-weight: 600;
+	}
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
