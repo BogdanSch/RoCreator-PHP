@@ -1,28 +1,28 @@
 </main>
-<footer>
+<footer class="footer">
 	<div class="footer__wrap">
 		<div class="footer__content">
 			<p>All rights reserved!</p>
 			<div class="soc-medias">
 				<a href="https://www.roblox.com/users/1412761211/profile" target="_blank" class="soc-link">
 					<i class="fa-solid fa-r">
-						<p class="hint">
+						<div class="hint">
 							Roblox
-						</p>
+						</div>
 					</i>
 				</a>
 				<a href="https://t.me/+voC6fujFeLE4ZDQy" target="_blank" class="soc-link">
 					<i class="fa-brands fa-telegram">
-						<p class="hint">
+						<div class="hint">
 							Telegram
-						</p>
+						</div>
 					</i>
 				</a>
 				<a href="https://www.instagram.com/bogmira_777/" target="_blank" class="soc-link">
 					<i class="fa-brands fa-instagram">
-						<p class="hint">
+						<div class="hint">
 							Instagram
-						</p>
+						</div>
 					</i>
 				</a>
 			</div>

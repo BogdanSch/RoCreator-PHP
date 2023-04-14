@@ -10,16 +10,16 @@ html {
 body {
 	font-family: 'Montserrat';
 	overflow-x: hidden;
-}
-body.lock {
-	overflow: hidden;
+	&.lock {
+		overflow: hidden;
+	}
 }
 //Mixin - Start
 @mixin flex-row {
   display: flex;
   flex-direction: row;
 }
-@mixin reset-list {
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -30,6 +30,7 @@ $introduce-bg: #F6F6F6;
 $text-color: #4B5D68;
 $accent: #5171ce;
 $background-dark: #555;
+$background-light: #5f5f5f;
 //Variables - End
 main {
 	margin-top: 70px;
@@ -42,6 +43,9 @@ main {
 .card {
 	background: transparent;
 	border: none;
+}
+h1 {
+	font-weight: 700;
 }
 h5 {
 	font-weight: 700;
@@ -58,25 +62,26 @@ ul {
 	padding: 0;
 	list-style: none;
 }
-h1 {
-	font-weight: 700;
-}
 img {
 	width: 70%;
 	border-radius: 15px;
+	&.dots {
+		position: absolute;
+		width: 10%;
+		right: 0;
+		top: 100%;
+		border-radius: 0px;
+	}
 }
 a {
 	text-decoration: none;
 	font-size: 16px;
-}
-a.active {
-	border-bottom: 1px solid $white-text;
-}
-button.active {
-	border-bottom: 1px solid $white-text;
-}
-a.center-align {
-	margin: 10px auto;
+	&.active {
+		border-bottom: 1px solid $white-text;
+	}
+	&.center-align {
+		margin: 10px auto;
+	}
 }
 .content {
 	max-width: 55%;
@@ -90,6 +95,9 @@ button {
 	border: none;
 	background-color: transparent;
 	padding: 0;
+	&.active {
+		border-bottom: 1px solid $white-text;
+	}
 }
 .btn {
 	border: none;
@@ -97,32 +105,33 @@ button {
 	border-radius: 20px;
 	padding: 10px 50px;
 	color: $white-text;
-}
-.btn--more {
-	background-color: $accent;
-	&:hover {
-		background-color: rgb(108, 0, 248);
-		border-radius: 12px;
+
+	&--more {
+		background-color: $accent;
+		&:hover {
+			background-color: rgb(108, 0, 248);
+			border-radius: 12px;
+		}
 	}
-}
-.btn--play {
-	font-size: 16px;
-	font-weight: 600;
-	color: $white-text;
-	text-decoration: none;
-	background-color: #ffe600;
-	box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-	border-radius: 20px;
-	padding: 10px 50px;
-	&:hover {
-		background-color: rgb(47, 0, 255);
-		border-radius: 12px;
+	&--play {
+		font-size: 16px;
+		font-weight: 600;
+		color: $white-text;
+		text-decoration: none;
+		background-color: #ffe600;
+		box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+		border-radius: 20px;
+		padding: 10px 50px;
+		&:hover {
+			background-color: rgb(47, 0, 255);
+			border-radius: 12px;
+		}
 	}
-}
-.btn--play.unfinished {
-	&:hover {
-		background-color: rgb(255, 0, 0);
-		border-radius: 12px;
+	&--play.unfinished {
+		&:hover {
+			background-color: rgb(255, 0, 0);
+			border-radius: 12px;
+		}
 	}
 }
 .col-img {
@@ -141,19 +150,18 @@ button {
 	justify-content: space-between;
 	margin: 130px auto;
 }
-p.hint {
-	font-family: 'Montserrat';
-	font-size: 500;
+.hint {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 3px;
 	display: none;
 	position: absolute;
 	top: -55px;
 	z-index: 100;
-	font-size: 18px;
-	font-weight: 700;
 	color: $white-text;
 	background-color: $accent;
 	border-radius: 10px;
-	padding: 4px 20px;
+	padding: 15px 40px;
 }
 .type {
 	font-size: 16px;
@@ -164,11 +172,11 @@ p.hint {
 		font-weight: 500;
 	}
 }
-&::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 7px;
 	background-color: rgb(224, 224, 224);
 }
-&::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background: rgb(143, 143, 143);
 	border-radius: 50px;
 }
@@ -197,17 +205,11 @@ p.hint {
 		left: 0;
 	}
 }
-img.dots {
-	position: absolute;
-	width: 10%;
-	right: 0;
-	top: 100%;
-	border-radius: 0px;
-}
 //General - End
 //Header - Start
 .header {
 	background-color: $background-dark;
+	min-width: 100%;
 	height: 50px;
 	position: fixed;
 	z-index: 2;
@@ -215,6 +217,9 @@ img.dots {
 	display: flex;
 	align-items: center;
 
+	& .container{
+		width: 90%;
+	}
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
@@ -227,7 +232,7 @@ img.dots {
 		}
 	}
 	&__list {
-		display: flex;
+		@include flex-row();
 		justify-content: space-between;
 		gap: 25px;
 	}
@@ -252,7 +257,6 @@ img.dots {
 	&__lower__item {
 		color: $white-text;
 		padding: 10px 10px;
-		text-align: center;
 		&:hover {
 			border-bottom: 1px solid $white-text;
 		}
@@ -414,7 +418,7 @@ img.dots {
 }
 //Privacy - End
 // Footer - Start
-footer {
+.footer {
 	position: relative;
 	top: 100%;
 	width: 100%;
@@ -425,6 +429,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
     &__wrap {
         width: 100%;
         height: 100%;
@@ -437,44 +442,46 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
-	p {
+	& p {
 		color: $white-text;
 		text-align: center;
 		padding: 0;
 		margin: 0;
 	}
-}
-.soc-medias {
-	width: 35%;
-	display: flex;
-	justify-content: center;
-	i {
-		color: $white-text;
-		padding: 7px;
-		background-color: rgb(189, 189, 189);
-		border-radius: 50%;
-		text-align: center;
-		position: relative;
-		width: 30px;
-		display: flex;
+	.soc-medias {
+		@include flex-row();
 		justify-content: center;
-		align-items: center;
-		&:hover {
-			background-color: $accent;
-			.hint {
-				display: block;
+
+		& i {
+			color: $white-text;
+			padding: 7px;
+			background-color: rgb(189, 189, 189);
+			border-radius: 50%;
+			text-align: center;
+			position: relative;
+			width: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:hover {
+				background-color: $accent;
+				.hint {
+					display: block;
+				}
 			}
 		}
 	}
-}
-.soc-link {
-	margin-left: 5px;
+	.soc-link {
+		margin-left: 5px;
+	}
 }
 //Footer - End
 // Media queries
 @media screen and (max-width: 499px) {
-	header {
+	.header {
 		height: 40px;
+		
         &__burger {
             display: block;
             width: 30px;
@@ -510,7 +517,7 @@ footer {
                 top: 9px;
                 transition: all 0.5s ease;
             }
-            &__burger.active {
+			&.active {
                 span {
                     display: none;
                     transition: all 0.5s ease;
@@ -528,33 +535,33 @@ footer {
             }
         }
         &__list {
+			display: block;
             position: fixed;
             top: -100%;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            background-color: rgb(0, 196, 196);
-            margin-top: 0;
-            flex-direction: column;
-            justify-content: start;
+            background-color: $background-light;
             transition: all 0.5s ease 1;
+			margin-top: 0;
+
+			&.active {
+				top: 41px;
+			}
         }
-        &.active {
-            top: 40px;
-        }
-        &__item {
-            padding: 10px 0;
-        }
-        &__lower__list {
-            z-index: 30;
-            top: 30px;
-            left: 20%;
-            background-color: #555;
-            border-radius: 10px;
-            padding: 30px 40px;
-            display: none;
-        }
+		&__item{
+			padding: 10px 10px;
+		}
+		&__lower__list {
+			z-index: 30;
+			top: 30px;
+			left: 20%;
+			background-color: #555;
+			border-radius: 10px;
+			padding: 30px 40px;
+			display: none;
+		}
 	}
 	h1 {
 		font-size: 20px;
