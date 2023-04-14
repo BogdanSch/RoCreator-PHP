@@ -13,7 +13,7 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__wrap">
                 <div class="logo">

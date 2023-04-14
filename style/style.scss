@@ -15,14 +15,21 @@ body.lock {
 	overflow: hidden;
 }
 //Mixin - Start
-
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin reset-list {
+  display: flex;
+  flex-direction: column;
+}
 //Mixin - End
 //Variables  - Start
 $white-text: #fff;
 $introduce-bg: #F6F6F6;
 $text-color: #4B5D68;
 $accent: #5171ce;
-$footer: #555;
+$background-dark: #555;
 //Variables - End
 main {
 	margin-top: 70px;
@@ -199,24 +206,19 @@ img.dots {
 }
 //General - End
 //Header - Start
-header {
-	background-color: #555;
-	width: 100%;
+.header {
+	background-color: $background-dark;
+	height: 50px;
 	position: fixed;
 	z-index: 2;
 	top: 0;
-	height: 50px;
 	display: flex;
 	align-items: center;
-	
-	.container {
-		width: 100%;
-	}
+
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
 		* {
 			color: $white-text;
 			font-weight: 400;
@@ -227,9 +229,9 @@ header {
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		gap: 25px;
 	}
 	&__item {
-		margin-left: 45px;
 		padding: 20px 0;
 		a {
 			&:hover {
@@ -416,7 +418,7 @@ footer {
 	position: relative;
 	top: 100%;
 	width: 100%;
-	background-color: $footer;
+	background-color: $background-dark;
 	padding: 10px 0;
 	margin: 0;
 	height: 50px;
