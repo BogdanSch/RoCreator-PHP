@@ -29,8 +29,9 @@
 		</div>
 	</div>
 </footer>
-<script src="./js/jQuery-v3.6.0.js"></script>
+<script src="js/jquery-3.6.4.min.js"></script>
 <script src="https://kit.fontawesome.com/daa76c24e2.js" crossorigin="anonymous"></script>
+<script src="js/theme.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/links.js"></script>
 </body>

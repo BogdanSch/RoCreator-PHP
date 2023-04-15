@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -22,28 +24,33 @@
                 <div class="header__burger">
                     <span></span>
                 </div>
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li class="header__item sub-games">
-                        <button class="opener">Games</button>
-                        <ul class="header__lower__list">
-                            <li class="header__lower__item">
-                                <a href="games-roblox.php">Roblox</a>
-                            </li>
-                            <li class="header__lower__item">
-                                <a href="games-android.php">Android</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__item">
-                        <a href="soft.php">Software</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="privacy.php">Privacy</a>
-                    </li>
-                </ul>
+                <div class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li class="header__item sub-games">
+                            <button class="opener">Games</button>
+                            <ul class="header__lower__list">
+                                <li class="header__lower__item">
+                                    <a href="games-roblox.php">Roblox</a>
+                                </li>
+                                <li class="header__lower__item">
+                                    <a href="games-android.php">Android</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="soft.php">Software</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="privacy.php">Privacy</a>
+                        </li>
+                    </ul>
+                    <div class="page__action">
+                        <button type="button" class="page__theme"></button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

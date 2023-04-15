@@ -1,7 +1,7 @@
 <?php include("page-parts/header.php"); ?>
 <section class="privacy">
     <div class="container">
-        <div class="privacy_wrap">
+        <div class="privacy__wrap">
             <div class="content">
                 <h1>Privacy</h1>
                 <p>
