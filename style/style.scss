@@ -493,7 +493,7 @@ button {
 @media screen and (max-width: 499px) {
 	.header {
 		height: 40px;
-		
+
         &__burger {
             display: block;
             width: 30px;
@@ -584,13 +584,15 @@ button {
 	h5 {
 		font-size: 14px;
 	}
-	.btn--play {
-		padding: 4px 22px;
-		font-size: 12px;
-	}
-	.btn--more {
-		padding: 4px 22px;
-		font-size: 12px;
+	.btn{
+&--play {
+	padding: 4px 22px;
+	font-size: 12px;
+}
+&--more {
+	padding: 4px 22px;
+	font-size: 12px;
+}
 	}
 	.introduction {
 		flex-direction: column;
@@ -659,11 +661,10 @@ button {
 	p {
 		font-size: 12px;
 	}
-	.btn--play {
-		padding: 9px 45px;
-	}
-	.btn--more {
-		padding: 9px 45px;
+	.btn{
+		&--play, &--more {
+			padding: 9px 45px;
+		}
 	}
 	.introducing {
 		.content {
