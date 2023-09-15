@@ -29,12 +29,12 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery-3.6.4.min.js"></script>
+<script src="./assets/js/jquery-3.6.4.min.js"></script>
 <script src="https://kit.fontawesome.com/daa76c24e2.js" crossorigin="anonymous"></script>
-<script src="js/theme.js"></script>
-<script src="./js/game-links.js"></script>
-<script src="./js/links.js"></script>
-<script src="./js/burger-menu.js"></script>
+<script src="./assets/js/theme.js"></script>
+<script src="./assets/js/game-links.js"></script>
+<script src="./assets/js/links.js"></script>
+<script src="./assets//js/burger-menu.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init();

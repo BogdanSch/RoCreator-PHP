@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="JtEQNzTX0hiaDx7cD4u73jiHjTo4PjkSEbWy7IkZBSg" />
     <title>RoCreator</title>
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./assets/style/normalize.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
 </head>
 
 <body>

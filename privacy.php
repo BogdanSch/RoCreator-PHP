@@ -1,4 +1,4 @@
-<?php include("page-parts/header.php"); ?>
+<?php include("partials/header.php"); ?>
 <section class="privacy">
     <div class="container">
         <div class="privacy__wrap">
@@ -12,8 +12,8 @@
                 </p>
                 <a class="btn btn--more" href="index.php">Go Home</a>
             </div>
-            <img src="img/image-intro.png" class="intro-img" alt="intro-img">
+            <img src="./assets/img/image-intro.png" class="intro-img" alt="intro-img">
         </div>
     </div>
 </section>
-<?php include("page-parts/footer.php"); ?>
+<?php include("partials/footer.php"); ?>

@@ -1,6 +1,6 @@
 <?php
 require_once("model/post.php");
-include("page-parts/header.php");
+include("partials/header.php");
 ?>
 <section class="introducing bg-color">
     <div class="container">
@@ -13,7 +13,7 @@ include("page-parts/header.php");
                 </p>
                 <a class="btn btn--more" href="#about">More</a>
             </div>
-            <img src="img/image-intro.png" class="intro-img" alt="intro image">
+            <img src="./assets/img/image-intro.png" class="intro-img" alt="intro image">
         </div>
     </div>
 </section>
@@ -22,7 +22,7 @@ include("page-parts/header.php");
         <div class="about__wrap">
             <div class="content">
                 <h2>About me</h2>
-                <img src="img/roblox-intro.jfif" alt="img">
+                <img src="./assets/img/roblox-intro.jfif" alt="img">
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
                     that. I
                     develop my
@@ -37,8 +37,7 @@ include("page-parts/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="https://compass-ssl.xbox.com/assets/cd/14/cd14239c-655d-42bc-bbfd-af506f107f8c.jpg?n=Roblox_Gallery-0_1350x759_04.jpg"
-                    class="col-img" alt="img">
+                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My games in Roblox</h2>
                     <p>I've created a bunch of fun games on Roblox over time, spanning various genres. The best part?
@@ -72,8 +71,7 @@ include("page-parts/header.php");
     <div class="software__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="https://compass-ssl.xbox.com/assets/cd/14/cd14239c-655d-42bc-bbfd-af506f107f8c.jpg?n=Roblox_Gallery-0_1350x759_04.jpg"
-                    class="col-img" alt="img">
+                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My software for pc and android</h2>
                     <p>These are my software for android and windows platforms which can be really useful
@@ -101,4 +99,4 @@ include("page-parts/header.php");
         </div>
     </div>
 </section>
-<?php include("page-parts/footer.php"); ?>
+<?php include("partials/footer.php"); ?>

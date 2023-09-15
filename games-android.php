@@ -1,13 +1,13 @@
 <?php
 require_once("model/post.php");
-include("page-parts/header.php");
+include("partials/header.php");
 ?>
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
             <div class="content">
                 <h2>About our games for Android</h2>
-                <img src="img/android.jfif" alt="img">
+                <img src="./assets/img/android.jfif" alt="img">
                 <p>I'm an android games developer. I made all of my games on Android studio. In this page you can find
                     all of our games for android devices</p>
                 <a class="btn btn--more" href="#games">More</a>
@@ -19,8 +19,7 @@ include("page-parts/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="https://compass-ssl.xbox.com/assets/cd/14/cd14239c-655d-42bc-bbfd-af506f107f8c.jpg?n=Roblox_Gallery-0_1350x759_04.jpg"
-                    class="col-img" alt="img">
+                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>Our games for Android</h2>
                     <p>I haven't made many games for android. These are all of our games which I have ever made on our
@@ -47,4 +46,4 @@ include("page-parts/header.php");
         </div>
     </div>
 </section>
-<?php include("page-parts/footer.php"); ?>
+<?php include("partials/footer.php"); ?>

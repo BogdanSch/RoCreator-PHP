@@ -23,7 +23,7 @@ class Post
     {
         $li_header = ($soft_type === "game") ? '<li class="games__item card">' : '<li class="software__item card">';
         $str_start = '
-        <img src="img/' . $this->image . '" class="games__img" alt="game image">
+        <img src="./assets/img/' . $this->image . '" class="games__img" alt="game image">
         <div class="description">
             <div class="text">
                 <h5>' . $this->title . '</h5>
@@ -35,7 +35,7 @@ class Post
             : '<button class="btn--play unfinished">Play</button>';
 
         $str_end = '</div>
-        <img class="bg--img" src="img/background.png" alt="background">
+        <img class="bg--img" src="./assets/img/background.png" alt="background">
     </li>';
 
         return $li_header . $str_start . $link . $str_end;
