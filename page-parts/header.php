@@ -8,6 +8,7 @@
     <title>RoCreator</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -41,7 +42,7 @@
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="soft.php">Software</a>
+                            <a href="software.php">Software</a>
                         </li>
                         <li class="header__item">
                             <a href="privacy.php">Privacy</a>

@@ -1,5 +1,5 @@
 <?php
 const SERVERNAME = "localhost";
-const DBNAME = "ro_news";
+const DBNAME = "rocreator-php";
 const USERNAME = "root";
-const PASSWORD = "";
+const PASSWORD = "root";

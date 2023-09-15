@@ -10,7 +10,7 @@
                     We don't collect information about user location.
                     And enjoy your experience on this web-site and our software.
                 </p>
-                <a class="btn btn--more" href="index.php">Home</a>
+                <a class="btn btn--more" href="index.php">Go Home</a>
             </div>
             <img src="img/image-intro.png" class="intro-img" alt="intro-img">
         </div>

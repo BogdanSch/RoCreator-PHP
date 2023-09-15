@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 05, 2023 at 04:17 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Host: localhost:3306
+-- Generation Time: Sep 15, 2023 at 08:00 PM
+-- Server version: 5.7.24
+-- PHP Version: 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ro_news`
+-- Database: `rocreator-php`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `games_table` (
   `id` int(11) NOT NULL,
   `game_title` varchar(100) DEFAULT NULL,
-  `game_content` text DEFAULT NULL,
+  `game_content` text,
   `game_type` varchar(100) DEFAULT NULL,
   `game_image` varchar(100) DEFAULT NULL,
   `publish_date` datetime DEFAULT NULL,
@@ -57,20 +57,20 @@ INSERT INTO `games_table` (`id`, `game_title`, `game_content`, `game_type`, `gam
 
 CREATE TABLE `soft_table` (
   `id` int(11) NOT NULL,
-  `soft_title` varchar(100) DEFAULT NULL,
-  `soft_content` text DEFAULT NULL,
-  `soft_type` varchar(100) DEFAULT NULL,
-  `soft_image` varchar(100) DEFAULT NULL,
+  `software_title` varchar(100) DEFAULT NULL,
+  `software_content` text,
+  `software_type` varchar(100) DEFAULT NULL,
+  `software_image` varchar(100) DEFAULT NULL,
   `publish_date` datetime DEFAULT NULL,
-  `soft_link` varchar(250) NOT NULL,
-  `soft_available` tinyint(1) DEFAULT NULL
+  `software_link` varchar(250) NOT NULL,
+  `software_available` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `soft_table`
 --
 
-INSERT INTO `soft_table` (`id`, `soft_title`, `soft_content`, `soft_type`, `soft_image`, `publish_date`, `soft_link`, `soft_available`) VALUES
+INSERT INTO `soft_table` (`id`, `software_title`, `software_content`, `software_type`, `software_image`, `publish_date`, `software_link`, `software_available`) VALUES
 (1, 'Calculator for pc', 'This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for windows devices. It doesn\'t	 have any virus!', 'PC', 'image3-1.png', '2023-01-29 17:21:18', '', 0),
 (2, 'Calculator for android', 'This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for android devices. It doesn\'t have any virus!', 'Android', 'image4.png', '2023-01-29 17:23:12', '', 0);
 
