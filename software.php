@@ -6,10 +6,11 @@ include("partials/header.php");
     <div class="container">
         <div class="about__wrap">
             <div class="content">
-                <h2>About our software</h2>
+                <h2>About my software</h2>
                 <img src="./assets/img/roblox-intro.jpg" alt="img">
-                <p>I started my carrier on developing software for pc and android. During my work I've made a lot of
-                    useful programs which can make your life easier</p>
+                <p>I started my carrier on developing software for pc and android devices.
+                    During my work I've made a lot of
+                    useful programs which can make your life much easier and effective.</p>
                 <a class="btn btn--more" href="#software">More</a>
             </div>
         </div>
@@ -21,9 +22,9 @@ include("partials/header.php");
             <div class="introduction">
                 <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
-                    <h2>Our software for pc and android</h2>
-                    <p>These are all our software for android and windows platforms which can be super useful
-                        for you. It's all free!</p>
+                    <h2>My software for pc and android</h2>
+                    <p>These are all my software for android and windows platforms which can be super useful
+                        for you. It's all completely free!</p>
                     <a class="btn btn--more" href="#pc-soft">More</a>
                 </div>
             </div>
@@ -39,7 +40,7 @@ include("partials/header.php");
                         echo $post->renderHTML("software");
                     }
                 } else {
-                    echo "Sorry there're no software";
+                    echo "Sorry, there're no software";
                 }
                 ?>
             </ul>

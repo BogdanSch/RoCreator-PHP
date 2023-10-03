@@ -7,7 +7,8 @@ include("partials/header.php");
         <div class="introducing__wrap">
             <div class="content">
                 <h1>RoCreator</h1>
-                <p>I'm a game, websites and sofware developer. To create all of my projects I use C#, Python, Lua, HTML
+                <p>I'm a games, websites and sofware developer. To create and develop all my projects I use C#, Python,
+                    Lua, HTML
                     + CSS + JS + PHP and Java.
                     Follow me on this site to get know more about me.
                 </p>
@@ -24,10 +25,9 @@ include("partials/header.php");
                 <h2>About me</h2>
                 <img src="./assets/img/roblox-intro.jfif" alt="img">
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
-                    that. I
-                    develop my
-                    project on Roblox and Unity and Wordpress too, also I have my software for android and desktop
-                    devices. Follow me on this site, if you wanna know more about me and my projects.</p>
+                    that. I develop all my project on Roblox and Unity and Wordpress too, also I have my software for
+                    android and desktop devices. Follow me on this site, if you wanna know more about me and my
+                    projects.</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>
         </div>
@@ -39,7 +39,7 @@ include("partials/header.php");
             <div class="introduction">
                 <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
-                    <h2>My games in Roblox</h2>
+                    <h2>My games on Roblox</h2>
                     <p>I've created a bunch of fun games on Roblox over time, spanning various genres. The best part?
                         You can play them on any device as long as you have Roblox installed.
                         These games are my own creations, and I'd love for you to give them a try! Just click 'More' to
@@ -59,7 +59,7 @@ include("partials/header.php");
 						echo $post->renderHTML();
 					}
 				} else {
-					echo "Sorry there're no games";
+					echo "Sorry, there're no games";
 				}
 				?>
                 <a class="btn btn--more center-align" href="games-roblox.php">Get More</a>
@@ -91,7 +91,7 @@ include("partials/header.php");
 						echo $post->renderHTML("software");
 					}
 				} else {
-					echo "Sorry there're no software";
+					echo "Sorry, there're no software";
 				}
 				?>
                 <a class="btn btn--more center-align" href="soft.php">Get More</a>

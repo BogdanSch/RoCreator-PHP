@@ -6,10 +6,10 @@ include("partials/header.php");
     <div class="container">
         <div class="about__wrap">
             <div class="content">
-                <h2>About our games for Android</h2>
+                <h2>About my games for Android</h2>
                 <img src="./assets/img/android.jfif" alt="img">
-                <p>I'm an android games developer. I made all of my games on Android studio. In this page you can find
-                    all of our games for android devices</p>
+                <p>I'm an android games developer. I made all of my games in Android Dtudio. In this page you can find
+                    all of our games for android devices.</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>
         </div>
@@ -21,9 +21,9 @@ include("partials/header.php");
             <div class="introduction">
                 <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
-                    <h2>Our games for Android</h2>
-                    <p>I haven't made many games for android. These are all of our games which I have ever made on our
-                        website. You can download them fast and for free. </p>
+                    <h2>My games for Android</h2>
+                    <p>I haven't made many games for android. These are all of the games which I have ever made and you
+                        check out them all on my website. You can download them fast and for free. </p>
                     <a class="btn btn--more" href="#android-games">More</a>
                 </div>
             </div>
@@ -39,7 +39,7 @@ include("partials/header.php");
 						echo $post->renderHTML();
 					}
 				} else {
-					echo "Sorry there're no games";
+					echo "Sorry, there're no games";
 				}
 				?>
             </ul>

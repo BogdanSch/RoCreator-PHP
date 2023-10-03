@@ -6,7 +6,7 @@ include("partials/header.php");
     <div class="container">
         <div class="about__wrap">
             <div class="content">
-                <h2>About our games on Roblox</h2>
+                <h2>About my games on Roblox</h2>
                 <img src="./assets/img/roblox-intro.jfif" alt="img">
                 <p>I'm a roblox developer and I have an experience in creating Roblox games about 2 years. In this page
                     you can find all of my roblox games which I have ever made.</p>
@@ -21,10 +21,10 @@ include("partials/header.php");
             <div class="introduction">
                 <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
-                    <h2>Our games in Roblox</h2>
+                    <h2>My games on Roblox</h2>
                     <p>I've made a lot of games on Roblox which have lots of genres. All these game are
-                        playeble on all kinds of devices only what you need it's Roblox. These games are
-                        made on my own. So if you wanna try it you can click More</p>
+                        playeble on all kinds of devices only what you need is Roblox. These games are
+                        made on my own. So if you wanna try it you can click More and support me on Roblox</p>
                     <a class="btn btn--more" href="#roblox-games">More</a>
                 </div>
             </div>
@@ -40,7 +40,7 @@ include("partials/header.php");
 						echo $post->renderHTML();
 					}
 				} else {
-					echo "Sorry there're no games";
+					echo "Sorry, there're no games";
 				}
 				?>
             </ul>
