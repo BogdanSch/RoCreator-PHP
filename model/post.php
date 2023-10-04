@@ -31,8 +31,8 @@ class Post
             </div><div class="type"><span>Platform: </span> ' . $this->platform . '</div>';
 
         $link = ($this->available)
-            ? '<a href="' . $this->link . '" target="_blank" class="btn--play">Play</a>'
-            : '<button class="btn--play unfinished">Play</button>';
+            ? '<a href="' . $this->link . '" target="_blank" class="btn btn--play">Play</a>'
+            : '<a class="btn btn--play unfinished">Play</a>';
 
         $str_end = '</div>
         <img class="bg--img" src="./assets/img/background.png" alt="background">

@@ -20,12 +20,13 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="header__logo">
+                    <i class="fa-solid fa-cloud"></i>
                     <a class="logo" href="index.php">RoCreator</a>
                 </div>
-                <div class="header__burger">
-                    <span></span>
-                </div>
                 <div class="header__menu">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <ul class="header__list">
                         <li class="header__item">
                             <a href="index.php">Home</a>

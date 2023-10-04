@@ -8,8 +8,7 @@ include("partials/header.php");
             <div class="content">
                 <h1>RoCreator</h1>
                 <p>I'm a games, websites and sofware developer. To create and develop all my projects I use C#, Python,
-                    Lua, HTML
-                    + CSS + JS + PHP and Java.
+                    Lua, HTML + CSS + JS + PHP and Java programming languages.
                     Follow me on this site to get know more about me.
                 </p>
                 <a class="btn btn--more" href="#about">More</a>
@@ -53,16 +52,16 @@ include("partials/header.php");
         <div class="games__wrap">
             <ul class="games__list" id="roblox-games">
                 <?php
-				$posts = Post::out(4, 0, "game", "Roblox");
-				if (count($posts) > 0) {
-					foreach ($posts as $post) {
-						echo $post->renderHTML();
-					}
-				} else {
-					echo "Sorry, there're no games";
-				}
-				?>
-                <a class="btn btn--more center-align" href="games-roblox.php">Get More</a>
+                $posts = Post::out(4, 0, "game", "Roblox");
+                if (count($posts) > 0) {
+                    foreach ($posts as $post) {
+                        echo $post->renderHTML();
+                    }
+                } else {
+                    echo "Sorry, there're no games";
+                }
+                ?>
+                <a class="btn btn--more center-align" href="./games-roblox.php">Get More</a>
             </ul>
         </div>
     </div>
@@ -86,15 +85,15 @@ include("partials/header.php");
             <ul class="software__list" id="pc-soft">
                 <?php
                 $posts = Post::out(4, 0, "software", "all");
-				if (count($posts) > 0) {
-					foreach ($posts as $post) {
-						echo $post->renderHTML("software");
-					}
-				} else {
-					echo "Sorry, there're no software";
-				}
-				?>
-                <a class="btn btn--more center-align" href="soft.php">Get More</a>
+                if (count($posts) > 0) {
+                    foreach ($posts as $post) {
+                        echo $post->renderHTML("software");
+                    }
+                } else {
+                    echo "Sorry, there're no software";
+                }
+                ?>
+                <a class="btn btn--more center-align" href="./software.php">Get More</a>
             </ul>
         </div>
     </div>

@@ -2,10 +2,8 @@
 $(document).ready(function () {
     let path = window.location.pathname;
     let currentPage = path.split("/").pop();
-    console.log(currentPage);
 
     const allHeaderLinks = $("li.header__item a");
-    console.log(allHeaderLinks);
 
     allHeaderLinks.each(function () {
         let element_href = $(this).attr("href");

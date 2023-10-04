@@ -5,10 +5,11 @@
             <div class="content">
                 <h1>Privacy</h1>
                 <p>
-                    Read the privacy policy up here.
-                    We don't collect userdata and use it at all.
-                    We don't collect information about user location.
-                    And enjoy your experience on this web-site and our software.
+                    You can read the privacy policy up here.
+                    You can freely useand share our software,
+                    We don't collect userdata and use it or send them at all,
+                    We don't collect information about user location and other user privacy.
+                    And enjoy your experience on this web-site and enjoy using my software.
                 </p>
                 <a class="btn btn--more" href="index.php">Go Home</a>
             </div>
