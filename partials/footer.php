@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrap">
-            <p>All rights reserved <?php echo date("Y"); ?> by Shcherbak Bohdan!</p>
+            <p>All rights reserved by Bohdan Shcherbak, <?php echo date("Y"); ?> Ukraine!</p>
             <div class="social-medias">
                 <a href="https://www.roblox.com/users/1412761211/profile" target="_blank" class="social-link">
                     <i class="fa-solid fa-r"></i>
