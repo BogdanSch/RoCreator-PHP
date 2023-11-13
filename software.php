@@ -7,7 +7,8 @@ include("partials/header.php");
         <div class="about__wrap">
             <div class="content">
                 <h2>About my software</h2>
-                <img src="./assets/img/roblox-intro.jpg" alt="img">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="img">
                 <p>I started my carrier on developing software for pc and android devices.
                     During my work I've made a lot of
                     useful programs which can make your life much easier and effective.</p>
@@ -20,7 +21,8 @@ include("partials/header.php");
     <div class="software__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="col-img" alt="img">
                 <div class="content">
                     <h2>My software for pc and android</h2>
                     <p>These are all my software for android and windows platforms which can be super useful

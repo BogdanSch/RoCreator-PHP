@@ -22,7 +22,8 @@ include("partials/header.php");
         <div class="about__wrap">
             <div class="content">
                 <h2>About me</h2>
-                <img src="./assets/img/roblox-intro.jfif" alt="img">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="img">
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
                     that. I develop all my project on Roblox and Unity and Wordpress too, also I have my software for
                     android and desktop devices. Follow me on this site, if you wanna know more about me and my

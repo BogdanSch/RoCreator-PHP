@@ -19,7 +19,8 @@ include("partials/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/07/image-1697.png?size=*:900"
+                    class="col-img" alt="img">
                 <div class="content">
                     <h2>My games for Android</h2>
                     <p>I haven't made many games for android. These are all of the games which I have ever made and you
@@ -33,15 +34,15 @@ include("partials/header.php");
         <div class="games__wrap">
             <ul class="games__list" id="android-games">
                 <?php
-				$posts = Post::out(6, 0, "game", "Android");
-				if (count($posts) > 0) {
-					foreach ($posts as $post) {
-						echo $post->renderHTML();
-					}
-				} else {
-					echo "Sorry, there're no games";
-				}
-				?>
+                $posts = Post::out(6, 0, "game", "Android");
+                if (count($posts) > 0) {
+                    foreach ($posts as $post) {
+                        echo $post->renderHTML();
+                    }
+                } else {
+                    echo "Sorry, there're no games";
+                }
+                ?>
             </ul>
         </div>
     </div>

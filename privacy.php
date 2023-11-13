@@ -13,7 +13,7 @@
                 </p>
                 <a class="btn btn--more" href="index.php">Go Home</a>
             </div>
-            <img src="./assets/img/image-intro.png" class="intro-img" alt="intro-img">
+            <img src="./assets/img/best-builder.png" class="intro-img" alt="Privacy Intro image">
         </div>
     </div>
 </section>
