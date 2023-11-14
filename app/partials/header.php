@@ -30,7 +30,7 @@
                     </div>
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="./">Home</a>
+                            <a href="./home">Home</a>
                         </li>
                         <li class="header__item sub-games">
                             <button class="opener">Games</button>

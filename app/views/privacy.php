@@ -1,4 +1,3 @@
-<?php include("app/partials/header.php"); ?>
 <section class="privacy">
     <div class="container">
         <div class="privacy__wrap">
@@ -17,4 +16,3 @@
         </div>
     </div>
 </section>
-<?php include("app/partials/footer.php"); ?>

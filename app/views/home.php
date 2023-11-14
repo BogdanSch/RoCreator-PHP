@@ -1,6 +1,3 @@
-<?php
-include("app/partials/header.php");
-?>
 <section class="introducing bg-color">
     <div class="container">
         <div class="introducing__wrap">
@@ -98,4 +95,3 @@ include("app/partials/header.php");
         </div>
     </div>
 </section>
-<?php include("app/partials/footer.php"); ?>

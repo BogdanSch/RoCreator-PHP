@@ -1,6 +1,3 @@
-<?php
-include("app/partials/header.php");
-?>
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
@@ -46,4 +43,3 @@ include("app/partials/header.php");
         </div>
     </div>
 </section>
-<?php include("app/partials/footer.php"); ?>
