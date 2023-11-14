@@ -7,6 +7,11 @@ $viewDir = '/app/views/';
 
 $router = new Router();
 
+$router->addPage404Handler(function () {
+    global $viewDir;
+    require __DIR__ . $viewDir . '404.php';
+});
+
 $router->get('/', function () {
     global $viewDir;
     require __DIR__ . $viewDir . 'home.php';

@@ -12,7 +12,7 @@ include("app/partials/header.php");
                 </p>
                 <a class="btn btn--more" href="#about">More</a>
             </div>
-            <img src="./app/assets/img/image-intro.png" class="intro-img" alt="intro image">
+            <img src="./app/assets/img/image-intro.png" class="intro-img" alt="Intro Image">
         </div>
     </div>
 </section>
@@ -21,7 +21,7 @@ include("app/partials/header.php");
         <div class="about__wrap">
             <div class="content">
                 <h2>About me</h2>
-                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                <img src="./app/assets/img/laptop-with-code.avif"
                     alt="img">
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
                     that. I develop all my project on Roblox and Unity and Wordpress too, also I have my software for
@@ -61,7 +61,7 @@ include("app/partials/header.php");
                     echo "Sorry, there're no games";
                 }
                 ?>
-                <a class="btn btn--more center-align" href="./games-roblox.php">Get More</a>
+                <a class="btn btn--more center-align" href="./games-roblox">Get More</a>
             </ul>
         </div>
     </div>
@@ -70,7 +70,7 @@ include("app/partials/header.php");
     <div class="software__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Game Image">
                 <div class="content">
                     <h2>My software for pc and android</h2>
                     <p>These are my software for android and windows platforms which can be really useful
@@ -93,7 +93,7 @@ include("app/partials/header.php");
                     echo "Sorry, there're no software";
                 }
                 ?>
-                <a class="btn btn--more center-align" href="./software.php">Get More</a>
+                <a class="btn btn--more center-align" href="./software">Get More</a>
             </ul>
         </div>
     </div>

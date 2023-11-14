@@ -413,8 +413,18 @@ button {
   }
   &__wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+  }
+  @media screen and (max-width: 770px) {
+    & .content {
+      max-width: 100%;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 }
 //Privacy - End

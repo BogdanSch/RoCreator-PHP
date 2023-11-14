@@ -21,6 +21,13 @@ class Router
             'handler' => $handler,
         ];
     }
+    public function addPage404Handler($handler)
+    {
+        $this->handlers["404"] = [
+            'handler' => $handler,
+            'path' => '404',
+        ];
+    }
     public function run()
     {
         $requestUri = parse_url($_SERVER['REQUEST_URI']);
@@ -32,6 +39,9 @@ class Router
             if($handler["path"] === $requestPath && $handler["method"] === $method){
                 $callbackHandler = $handler["handler"];
             }
+        }
+        if(!isset($callbackHandler)){
+            $callbackHandler = $this->handlers["404"];
         }
         call_user_func_array($callbackHandler, [array_merge($_GET, $_POST)]);
     }

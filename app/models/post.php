@@ -1,6 +1,9 @@
 <?php
 require_once("app/db-settings/dbconnect.php");
 
+$connection = $database->getConnection();
+Post::$connection = $connection;
+
 class Post
 {
     public $image;
@@ -9,6 +12,7 @@ class Post
     public $platform;
     public $available;
     public $link;
+    public static $connection;
 
     public function __construct($image, $title, $content, $platform, $available, $link)
     {
@@ -43,8 +47,6 @@ class Post
     }
     public static function out($count, $offset, $soft_type, $search_platform)
     {
-        global $database;
-        $connection = $database->getConnection();
         $arr_out = [];
 
         try {
@@ -53,8 +55,8 @@ class Post
 
             $query = "SELECT * FROM `" . $tableName . "`" . $whereClause . " ORDER BY publish_date DESC LIMIT " . $count . " OFFSET " . $offset;
 
-            if (!$result = $connection->query($query)) {
-                throw new Exception('Error selection from table `' . $tableName . '`: [' . $connection->error . ']');
+            if (!$result = Post::$connection->query($query)) {
+                throw new Exception('Error selection from table `' . $tableName . '`: [' . Post::$connection->error . ']');
             }
 
             while ($row = $result->fetch_assoc()) {

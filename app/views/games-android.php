@@ -18,8 +18,8 @@ include("app/partials/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/07/image-1697.png?size=*:900"
-                    class="col-img" alt="img">
+                <img src="./app/assets/img/image-phone-game.avif"
+                    class="col-img" alt="Phone Game Image">
                 <div class="content">
                     <h2>My games for Android</h2>
                     <p>I haven't made many games for android. These are all of the games which I have ever made and you
