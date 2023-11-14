@@ -21,7 +21,7 @@
             <div class="header__wrap">
                 <div class="header__logo">
                     <i class="fa-solid fa-cloud"></i>
-                    <a class="logo" href="index.php">RoCreator</a>
+                    <a class="logo" href="/">RoCreator</a>
                 </div>
                 <div class="header__menu">
                     <div class="header__burger">
@@ -29,24 +29,24 @@
                     </div>
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="index.php">Home</a>
+                            <a href="/home/">Home</a>
                         </li>
                         <li class="header__item sub-games">
                             <button class="opener">Games</button>
                             <ul class="header__lower__list">
                                 <li class="header__lower__item">
-                                    <a href="games-roblox.php">Roblox</a>
+                                    <a href="/games-roblox/">Roblox</a>
                                 </li>
                                 <li class="header__lower__item">
-                                    <a href="games-android.php">Android</a>
+                                    <a href="/games-android/">Android</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="software.php">Software</a>
+                            <a href="/software/">Software</a>
                         </li>
                         <li class="header__item">
-                            <a href="privacy.php">Privacy</a>
+                            <a href="/privacy/">Privacy</a>
                         </li>
                     </ul>
                     <div class="page__action">
