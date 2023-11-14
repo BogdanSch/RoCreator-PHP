@@ -1,6 +1,5 @@
 <?php
-require_once("model/post.php");
-include("partials/header.php");
+include("app/partials/header.php");
 ?>
 <section class="about introducing">
     <div class="container">
@@ -49,4 +48,4 @@ include("partials/header.php");
         </div>
     </div>
 </section>
-<?php include("partials/footer.php"); ?>
+<?php include("app/partials/footer.php"); ?>

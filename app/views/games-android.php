@@ -1,13 +1,12 @@
 <?php
-require_once("model/post.php");
-include("partials/header.php");
+include("app/partials/header.php");
 ?>
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
             <div class="content">
                 <h2>About my games for Android</h2>
-                <img src="./assets/img/android.jfif" alt="img">
+                <img src="./app/assets/img/android.jfif" alt="img">
                 <p>I'm an android games developer. I made all of my games in Android Dtudio. In this page you can find
                     all of our games for android devices.</p>
                 <a class="btn btn--more" href="#games">More</a>
@@ -47,4 +46,4 @@ include("partials/header.php");
         </div>
     </div>
 </section>
-<?php include("partials/footer.php"); ?>
+<?php include("app/partials/footer.php"); ?>

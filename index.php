@@ -1,18 +1,11 @@
 <?php
 
-require_once("router.php");
+require_once("app/router.php");
 
 $request = $_SERVER['REQUEST_URI'];
-$siteBase = "/RoCreator-PHP";
-$viewDir = '/views/';
+$viewDir = '/app/views/';
 
-// print_r($request);
 $router = new Router();
-
-$router->get('/', function () {
-    global $viewDir;
-    require __DIR__ . $viewDir . 'home.php';
-});
 
 $router->get('/', function () {
     global $viewDir;
@@ -43,3 +36,5 @@ $router->get('/contact', function () {
     global $viewDir;
     require __DIR__ . $viewDir . 'contact.php';
 });
+
+$router->run();

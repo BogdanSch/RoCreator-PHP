@@ -1,13 +1,12 @@
 <?php
-require_once("model/post.php");
-include("partials/header.php");
+include("app/partials/header.php");
 ?>
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
             <div class="content">
                 <h2>About my games on Roblox</h2>
-                <img src="./assets/img/roblox-intro.jfif" alt="img">
+                <img src="./app/assets/img/roblox-intro.jfif" alt="img">
                 <p>I'm a roblox developer and I have an experience in creating Roblox games about 2 years. In this page
                     you can find all of my roblox games which I have ever made.</p>
                 <a class="btn btn--more" href="#games">More</a>
@@ -19,7 +18,7 @@ include("partials/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My games on Roblox</h2>
                     <p>I've made a lot of games on Roblox which have lots of genres. All these game are
@@ -47,4 +46,4 @@ include("partials/header.php");
         </div>
     </div>
 </section>
-<?php include("partials/footer.php"); ?>
+<?php include("app/partials/footer.php"); ?>

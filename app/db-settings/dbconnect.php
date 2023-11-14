@@ -1,11 +1,27 @@
 <?php
 require_once "config.php";
 
-try {
-    $connection = new mysqli(SERVERNAME, USERNAME, PASSWORD, DBNAME);
-    if ($connection->connect_error) {
-        throw new Exception("Connection failed: " . $connection->connect_error);
+class Database
+{
+    private $connection;
+
+    public function __construct($servername, $username, $password, $dbname)
+    {
+        try {
+            $this->connection = new mysqli($servername, $username, $password, $dbname);
+
+            if ($this->connection->connect_error) {
+                throw new Exception("Connection failed: " . $this->connection->connect_error);
+            }
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
     }
-} catch (Exception $e) {
-    echo $e->getMessage();
+
+    public function getConnection()
+    {
+        return $this->connection;
+    }
 }
+
+$database = new Database(SERVERNAME, USERNAME, PASSWORD, DBNAME);

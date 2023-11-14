@@ -1,5 +1,4 @@
 <?php
-require_once("app/models/post.php");
 include("app/partials/header.php");
 ?>
 <section class="introducing bg-color">
@@ -13,7 +12,7 @@ include("app/partials/header.php");
                 </p>
                 <a class="btn btn--more" href="#about">More</a>
             </div>
-            <img src="./assets/img/image-intro.png" class="intro-img" alt="intro image">
+            <img src="./app/assets/img/image-intro.png" class="intro-img" alt="intro image">
         </div>
     </div>
 </section>
@@ -37,7 +36,7 @@ include("app/partials/header.php");
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My games on Roblox</h2>
                     <p>I've created a bunch of fun games on Roblox over time, spanning various genres. The best part?
@@ -71,7 +70,7 @@ include("app/partials/header.php");
     <div class="software__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My software for pc and android</h2>
                     <p>These are my software for android and windows platforms which can be really useful
@@ -99,4 +98,4 @@ include("app/partials/header.php");
         </div>
     </div>
 </section>
-<?php include("partials/footer.php"); ?>
+<?php include("app/partials/footer.php"); ?>
