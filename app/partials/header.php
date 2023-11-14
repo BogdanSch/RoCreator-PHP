@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="JtEQNzTX0hiaDx7cD4u73jiHjTo4PjkSEbWy7IkZBSg" />
     <title>RoCreator - Developer Website</title>
-    <link rel="stylesheet" href="./app/assets/style/normalize.css">
-    <link rel="stylesheet" href="./app/assets/style/style.css">
+    <link rel="stylesheet" href="./app/assets/styles/normalize.css">
+    <link rel="stylesheet" href="./app/assets/styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./app/assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./app/assets/img/favicon/favicon-32x32.png">

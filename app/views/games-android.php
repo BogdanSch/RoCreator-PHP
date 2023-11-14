@@ -1,10 +1,10 @@
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
-            <div class="content">
+            <div class="about__content">
                 <h2>About my games for Android</h2>
-                <img src="./app/assets/img/android.jfif" alt="img">
-                <p>I'm an android games developer. I made all of my games in Android Dtudio. In this page you can find
+                <img src="./app/assets/img/android-device.jpg" alt="img">
+                <p>I'm an android games and software developer. I made all of my games in Android Studio and also Unity. In this page you can find
                     all of our games for android devices.</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>

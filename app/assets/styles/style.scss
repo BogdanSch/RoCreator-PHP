@@ -100,6 +100,11 @@ a {
     margin-bottom: 30px;
   }
 }
+[class*="__"][class$="__content"] {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 70%;
+}
 button {
   border: none;
   background-color: transparent;
@@ -162,6 +167,8 @@ button {
   flex-direction: row;
   justify-content: space-between;
   margin: 130px auto;
+}
+@media screen and (max-width: 770px) {
 }
 .type {
   font-size: 16px;
@@ -604,9 +611,7 @@ button {
       font-size: 12px;
     }
   }
-  .introduction {
-    flex-direction: column;
-  }
+  
   .games {
     &__img {
       width: 50%;
@@ -665,6 +670,14 @@ button {
   .type {
     font-size: 9px;
     margin-bottom: 10%;
+  }
+  .introduction {
+    flex-direction: column;
+    margin: 80px auto;
+
+    img{
+      width: 50%;
+    }
   }
 }
 @media screen and (min-width: 530px) and (max-width: 770px) {

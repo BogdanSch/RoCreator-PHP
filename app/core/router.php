@@ -41,7 +41,7 @@ class Router
             }
         }
         if(!isset($callbackHandler)){
-            $callbackHandler = $this->handlers["404"];
+            $callbackHandler = $this->handlers["404"]["handler"];
         }
         call_user_func_array($callbackHandler, [array_merge($_GET, $_POST)]);
     }

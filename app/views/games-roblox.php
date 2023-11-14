@@ -1,7 +1,7 @@
 <section class="about introducing">
     <div class="container">
         <div class="about__wrap">
-            <div class="content">
+            <div class="about__content">
                 <h2>About my games on Roblox</h2>
                 <img src="./app/assets/img/roblox-intro.jfif" alt="img">
                 <p>I'm a roblox developer and I have an experience in creating Roblox games about 2 years. In this page
@@ -15,7 +15,7 @@
     <div class="games__hero bg-color-block">
         <div class="container">
             <div class="introduction">
-                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
+                <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Games Intro Image">
                 <div class="content">
                     <h2>My games on Roblox</h2>
                     <p>I've made a lot of games on Roblox which have lots of genres. All these game are

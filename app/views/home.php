@@ -16,7 +16,7 @@
 <section class="about" id="about">
     <div class="container">
         <div class="about__wrap">
-            <div class="content">
+            <div class="about__content">
                 <h2>About me</h2>
                 <img src="./app/assets/img/laptop-with-code.avif"
                     alt="img">
