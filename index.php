@@ -37,9 +37,9 @@ $router->get('/privacy', function () {
     require __DIR__ . $viewDir . 'privacy.php';
 });
 
-$router->get('/contact', function () {
+$router->get('/contacts', function () {
     global $viewDir;
-    require __DIR__ . $viewDir . 'contact.php';
+    require __DIR__ . $viewDir . 'contacts.php';
 });
 
 $router->run();
