@@ -13,13 +13,12 @@
         </div>
     </div>
 </section>
-<section class="about" id="about">
+<section class="about" id="about" data-aos="zoom-in" data-aos-duration="2000">
     <div class="container">
         <div class="about__wrap">
             <div class="about__content">
                 <h2>About me</h2>
-                <img src="./app/assets/img/laptop-with-code.avif"
-                    alt="img">
+                <img src="./app/assets/img/laptop-with-code.avif" alt="img">
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
                     that. I develop all my project on Roblox and Unity and Wordpress too, also I have my software for
                     android and desktop devices. Follow me on this site, if you wanna know more about me and my

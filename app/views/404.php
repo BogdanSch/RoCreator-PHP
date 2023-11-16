@@ -1,4 +1,4 @@
-<section class="page-404" data-aos="fade-down" data-aos-duration="3000">
+<section class="page-404" data-aos="fade-down" data-aos-duration="1500">
     <div class="container">
         <div class="page-404__wrap">
             <h2 class="page-404__title">4<span>0</span>4</h2>

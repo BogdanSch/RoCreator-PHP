@@ -34,17 +34,18 @@
   &__list {
     @include flex-row();
     justify-content: space-between;
+    align-items: center;
     gap: 25px;
   }
   &__item {
-    padding: 20px 0;
-
     &.accent {
       background-color: $accent;
+      padding: 10px 20px;
+      border-radius: 10px;
     }
     a {
       &:hover {
-        color: #cfcfcf;
+        color: $yellow;
       }
     }
   }
@@ -53,7 +54,7 @@
     z-index: 100;
     top: 60px;
     left: -75%;
-    background-color: #555;
+    background-color: $background-dark;
     border-radius: 10px;
     padding: 30px 40px;
     display: none;
@@ -68,8 +69,10 @@
 }
 .sub-games {
   position: relative;
-  cursor: pointer;
+  padding: 20px 0;
+
   &:hover {
+    cursor: pointer;
     .header__lower__list {
       display: block;
     }
