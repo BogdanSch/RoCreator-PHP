@@ -9,8 +9,7 @@ class View
         $this->viewName = $viewName;
     }
     public static function render($viewName){
-        include_once(self::$partialsFolderPath . "header.php");
-        include_once( self::$viewsFolderPath . $viewName );
-        include_once(self::$partialsFolderPath . "footer.php");
+        $requiredView = self::$viewsFolderPath . $viewName;
+        include_once(self::$partialsFolderPath . "layout.php");
     }
 }
