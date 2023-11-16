@@ -1,7 +1,7 @@
 DirectoryIndex index.php
 
 RewriteEngine On
-RewriteBase /
+RewriteBase /RoCreator-PHP
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

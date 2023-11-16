@@ -1,4 +1,4 @@
-<section class="privacy">
+<section class="privacy" data-aos="fade-up-right" data-aos-duration="2500">
     <div class="container">
         <div class="privacy__wrap">
             <div class="content">

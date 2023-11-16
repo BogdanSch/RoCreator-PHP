@@ -1,0 +1,15 @@
+.page-404 {
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    span {
+      color: $red;
+    }
+  }
+  &__description {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}

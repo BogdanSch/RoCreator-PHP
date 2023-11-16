@@ -1,0 +1,48 @@
+.games {
+  .text {
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+  }
+  &__hero {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    width: 40%;
+    position: relative;
+    left: -3%;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    .description {
+      max-width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .text {
+        margin-bottom: 15px;
+      }
+    }
+    .btn {
+      margin-top: 10px;
+    }
+  }
+}

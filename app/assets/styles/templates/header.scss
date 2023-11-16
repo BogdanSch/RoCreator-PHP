@@ -1,0 +1,77 @@
+.header {
+  background-color: $background-dark;
+  min-width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+
+  .page__theme:hover {
+    cursor: pointer;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__wrap {
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+    max-height: 30px;
+    * {
+      color: $white-text;
+      font-weight: 400;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+  &__menu {
+    @include flex-row();
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__list {
+    @include flex-row();
+    justify-content: space-between;
+    gap: 25px;
+  }
+  &__item {
+    padding: 20px 0;
+
+    &.accent {
+      background-color: $accent;
+    }
+    a {
+      &:hover {
+        color: #cfcfcf;
+      }
+    }
+  }
+  &__lower__list {
+    position: absolute;
+    z-index: 100;
+    top: 60px;
+    left: -75%;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: none;
+  }
+  &__lower__item {
+    color: $white-text;
+    padding: 10px 10px;
+    &:hover {
+      border-bottom: 1px solid $white-text;
+    }
+  }
+}
+.sub-games {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .header__lower__list {
+      display: block;
+    }
+  }
+}

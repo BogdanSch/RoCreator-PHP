@@ -1,0 +1,15 @@
+.introducing {
+  margin-bottom: 69px;
+  position: relative;
+  .content {
+    max-width: 40%;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.intro-img {
+  width: 60%;
+}

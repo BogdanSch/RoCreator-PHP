@@ -35,7 +35,7 @@
 <script src="./app/assets/js/header-links.js"></script>
 <script src="./app/assets/js/burger-menu.js"></script>
 <script>
-AOS.init();
+    AOS.init();
 </script>
 </body>
 

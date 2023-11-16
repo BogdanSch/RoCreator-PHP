@@ -1,10 +1,11 @@
-<section class="about introducing">
+<section class="about introducing" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <div class="about__wrap">
             <div class="about__content">
                 <h2>About my games for Android</h2>
                 <img src="./app/assets/img/android-device.jpg" alt="img">
-                <p>I'm an android games and software developer. I made all of my games in Android Studio and also Unity. In this page you can find
+                <p>I'm an android games and software developer. I made all of my games in Android Studio and also Unity.
+                    In this page you can find
                     all of our games for android devices.</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>
@@ -12,11 +13,10 @@
     </div>
 </section>
 <section class="games" id="games">
-    <div class="games__hero bg-color-block">
+    <div class="games__hero bg-color-block" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <div class="introduction">
-                <img src="./app/assets/img/image-phone-game.avif"
-                    class="col-img" alt="Phone Game Image">
+                <img src="./app/assets/img/image-phone-game.avif" class="col-img" alt="Phone Game Image">
                 <div class="content">
                     <h2>My games for Android</h2>
                     <p>I haven't made many games for android. These are all of the games which I have ever made and you

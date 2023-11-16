@@ -1,4 +1,4 @@
-<section class="introducing bg-color" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+<section class="introducing bg-color" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <div class="introducing__wrap">
             <div class="content">
@@ -30,7 +30,7 @@
     </div>
 </section>
 <section class="games" id="games">
-    <div class="games__hero bg-color-block">
+    <div class="games__hero bg-color-block" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="introduction">
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
@@ -64,7 +64,7 @@
     </div>
 </section>
 <section class="software" id="software">
-    <div class="software__hero bg-color-block">
+    <div class="software__hero bg-color-block" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="introduction">
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Game Image">

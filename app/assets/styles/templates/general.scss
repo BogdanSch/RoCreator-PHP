@@ -1,0 +1,195 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap";
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", serif;
+  &.lock {
+    overflow: hidden;
+  }
+}
+.wrapper {
+  overflow-x: hidden;
+  @include flex-column();
+  min-height: 100vh;
+}
+main {
+  margin-top: 70px;
+  flex: 1;
+  @include flex-column();
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.card {
+  background: transparent;
+  border: none;
+}
+h1,
+h2,
+h5 {
+  font-weight: 700;
+  color: $body-dark;
+}
+h5 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+p {
+  color: $text-color;
+  line-height: 140%;
+  font-size: 16px;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 70%;
+  border-radius: 15px;
+  &.dots {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    top: 100%;
+    border-radius: 0px;
+  }
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+  &.active {
+    border-bottom: 1px solid $white-text;
+  }
+  &.center-align {
+    margin: 10px auto;
+  }
+}
+.content {
+  max-width: 55%;
+  margin: 40px auto;
+  text-align: center;
+  p {
+    margin-bottom: 30px;
+  }
+}
+[class*="__"][class$="__content"] {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 70%;
+}
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  &.active {
+    border-bottom: 1px solid $white-text;
+  }
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 50px;
+  color: $white-text;
+  transition: all 0.5s ease;
+
+  &--more {
+    background-color: $accent;
+    &:hover {
+      background-color: $btn-more;
+      border-radius: 12px;
+    }
+  }
+  &--play {
+    font-size: 16px;
+    font-weight: 600;
+    color: $body-dark;
+    text-decoration: none;
+    background-color: $btn-play;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 20px;
+    padding: 10px 50px;
+
+    &:hover {
+      background-color: $btn-bg;
+      border-radius: 12px;
+      color: $white-text;
+    }
+  }
+  &--play.unfinished {
+    &:hover {
+      cursor: pointer;
+      background-color: $red;
+      border-radius: 12px;
+    }
+  }
+}
+.col-img {
+  width: 40%;
+  align-self: center;
+}
+.bg--img {
+  position: absolute;
+  left: 115px;
+  z-index: -1;
+  width: 71%;
+}
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 130px auto;
+}
+@media screen and (max-width: 770px) {
+}
+.type {
+  font-size: 16px;
+  color: $text-color;
+  margin-bottom: 3%;
+  span {
+    color: $accent;
+    font-weight: 500;
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(224, 224, 224);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(143, 143, 143);
+  border-radius: 50px;
+}
+.bg-color {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 131%;
+    background-color: $introduce-bg;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+  }
+}
+.bg-color-block {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 92%;
+    background-color: $introduce-bg;
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 0;
+  }
+}

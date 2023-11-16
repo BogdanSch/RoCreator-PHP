@@ -1,4 +1,4 @@
-<section class="about introducing">
+<section class="about introducing" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <div class="about__wrap">
             <div class="about__content">
@@ -12,7 +12,7 @@
     </div>
 </section>
 <section class="games" id="games">
-    <div class="games__hero bg-color-block">
+    <div class="games__hero bg-color-block" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <div class="introduction">
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Games Intro Image">
@@ -30,15 +30,15 @@
         <div class="games__wrap">
             <ul class="games__list" id="roblox-games">
                 <?php
-				$posts = Post::out(6, 0, "game", "Roblox");
-				if (count($posts) > 0) {
-					foreach ($posts as $post) {
-						echo $post->renderHTML();
-					}
-				} else {
-					echo "Sorry, there're no games";
-				}
-				?>
+                $posts = Post::out(6, 0, "game", "Roblox");
+                if (count($posts) > 0) {
+                    foreach ($posts as $post) {
+                        echo $post->renderHTML();
+                    }
+                } else {
+                    echo "Sorry, there're no games";
+                }
+                ?>
             </ul>
         </div>
     </div>
