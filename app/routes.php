@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $router = new Router();
 
@@ -7,7 +7,7 @@ $router->addPage404Handler(function () {
 });
 
 $router->get('/', function () {
-    View::render("home.php");
+    header('Location: ./home');
 });
 
 $router->get('/home', function () {
