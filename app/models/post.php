@@ -26,7 +26,7 @@ class Post
 
     public function renderHTML($soft_type = "game")
     {
-        $li_header = ($soft_type === "game") ? '<li class="games__item card">' : '<li class="software__item card">';
+        $li_header = ($soft_type === "game") ? '<li class="games__item card" data-aos="fade-up" data-aos-duration="2000">' : '<li class="software__item card" data-aos="fade-up" data-aos-duration="2000">';
         $str_start = '
         <img src="./app/assets/img/' . $this->image . '" class="games__img" alt="game image">
         <div class="description">

@@ -1,4 +1,3 @@
-//Header links
 $(document).ready(function () {
     let path = window.location.pathname;
     let currentPage = path.split("/").pop();
@@ -6,7 +5,7 @@ $(document).ready(function () {
     const allHeaderLinks = $("li.header__item a");
 
     allHeaderLinks.each(function () {
-        let element_href = $(this).attr("href");
+        let element_href = $(this).attr("href").split("./").pop();
 
         if (currentPage.includes("games")) {
             let gamesButton = $("li.sub-games .opener");

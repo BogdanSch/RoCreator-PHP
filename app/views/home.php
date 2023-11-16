@@ -1,4 +1,4 @@
-<section class="introducing bg-color">
+<section class="introducing bg-color" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
     <div class="container">
         <div class="introducing__wrap">
             <div class="content">

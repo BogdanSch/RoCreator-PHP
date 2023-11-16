@@ -2,17 +2,22 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap";
 * {
   box-sizing: border-box;
-  transition: all 0.1s ease;
+  // transition: all 0.2s ease;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "Montserrat", serif;
-  overflow-x: hidden;
   &.lock {
     overflow: hidden;
   }
+}
+.wrapper{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 //Mixin - Start
 @mixin flex-row {
@@ -437,8 +442,9 @@ button {
 //Privacy - End
 // Footer - Start
 .footer {
-  position: relative;
-  top: 100%;
+  // position: relative;
+  // top: 100%;
+  margin-top: auto;
   background-color: $background-dark;
 
   &__wrap {
