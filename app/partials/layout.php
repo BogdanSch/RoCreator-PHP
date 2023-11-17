@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="JtEQNzTX0hiaDx7cD4u73jiHjTo4PjkSEbWy7IkZBSg" />
-    <title>RoCreator - Developer Website</title>
+    <title>RoCreator - Developer Website UA</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./app/assets/styles/normalize.css">
     <link rel="stylesheet" href="./app/assets/styles/style.css">
