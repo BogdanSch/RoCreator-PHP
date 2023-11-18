@@ -1,0 +1,24 @@
+.popup {
+  text-align: center;
+  &__image {
+    display: block;
+    width: 12%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 30px auto;
+  }
+  &.success {
+    & .popup__title {
+      color: $green !important;
+    }
+  }
+  &.error {
+    & .popup__title {
+      color: $red !important;
+    }
+  }
+}

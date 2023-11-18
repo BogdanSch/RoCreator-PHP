@@ -42,7 +42,8 @@
       background-color: $accent;
       padding: 10px 20px;
       border-radius: 10px;
-      transition: all 1s ease;
+      transition: all .5s ease;
+    
       &:hover {
         background-color: $purple;
       }

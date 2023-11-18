@@ -34,6 +34,7 @@ main {
 }
 h1,
 h2,
+h3,
 h5 {
   font-weight: 700;
   color: $body-dark;
@@ -47,6 +48,9 @@ p {
   color: $text-color;
   line-height: 140%;
   font-size: 16px;
+}
+label {
+  color: $text-color;
 }
 ul {
   padding: 0;
@@ -105,6 +109,7 @@ button {
   &--more {
     background-color: $accent;
     &:hover {
+      cursor: pointer;
       background-color: $purple;
       border-radius: 12px;
     }
@@ -120,6 +125,7 @@ button {
     padding: 10px 50px;
 
     &:hover {
+      cursor: pointer;
       background-color: $btn-bg;
       border-radius: 12px;
       color: $white-text;
@@ -130,6 +136,19 @@ button {
       cursor: pointer;
       background-color: $red;
       border-radius: 12px;
+    }
+  }
+  &--submit {
+    font-size: 20px;
+    font-weight: 600;
+    color: $white-text;
+    background-color: $purple;
+    padding: 16px 20px;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      background-color: $accent;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.12);
     }
   }
 }

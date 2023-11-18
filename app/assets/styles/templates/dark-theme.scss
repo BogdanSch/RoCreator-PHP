@@ -1,0 +1,47 @@
+// @media (prefers-color-scheme: dark) {
+// 	body{
+// 		color: $white-text;
+// 		background-color: $body-dark;
+// 	}
+// 	p, .type{
+// 		color: $white-text;
+// 	}
+// 	.bg-color, .bg-color-block{
+// 		background-color: $body-light;
+// 	}
+// 	.bg-color::after, .bg-color-block::after{
+// 		background-color: $body-light;
+// 	}
+// }
+html {
+  &.dark {
+    body {
+      color: $white-text;
+      background-color: $body-dark;
+    }
+    h1,
+    h2,
+    h3,
+    h5 {
+      font-weight: 700;
+      color: $white-text;
+    }
+    p,
+    .type, label {
+      color: $white-text;
+    }
+    .bg-color,
+    .bg-color-block {
+      background-color: $body-light;
+    }
+    .bg-color::after,
+    .bg-color-block::after {
+      background-color: $body-light;
+    }
+    .social-medias {
+      .hint {
+        border: 3px solid $introduce-bg !important;
+      }
+    }
+  }
+}

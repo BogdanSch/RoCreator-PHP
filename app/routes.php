@@ -7,7 +7,7 @@ $router->addPage404Handler(function () {
 });
 
 $router->get('/', function () {
-    header('Location: ./home');
+    View::render("home.php");
 });
 
 $router->get('/home', function () {
@@ -32,6 +32,25 @@ $router->get('/privacy', function () {
 
 $router->get('/contacts', function () {
     View::render("contacts.php");
+});
+
+$router->post('/mail-action', function () {
+    $fullName = $_POST['full-name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $mailer = new Mailer($fullName, $email, $subject, $message);
+    $mailStatus = 'error';
+
+    try {
+        if ($mailer->sendMail()) {
+            $mailStatus = 'success';
+        }
+    } catch (Exception $ex) {
+        $mailStatus = 'error';
+    }
+    View::render("mail-status.php", $mailStatus);
 });
 
 $router->run();
