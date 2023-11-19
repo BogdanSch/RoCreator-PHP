@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 15, 2023 at 08:00 PM
+-- Generation Time: Nov 19, 2023 at 05:15 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.1.0
 
@@ -72,7 +72,8 @@ CREATE TABLE `soft_table` (
 
 INSERT INTO `soft_table` (`id`, `software_title`, `software_content`, `software_type`, `software_image`, `publish_date`, `software_link`, `software_available`) VALUES
 (1, 'Calculator for pc', 'This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for windows devices. It doesn\'t	 have any virus!', 'PC', 'image3-1.png', '2023-01-29 17:21:18', '', 0),
-(2, 'Calculator for android', 'This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for android devices. It doesn\'t have any virus!', 'Android', 'image4.png', '2023-01-29 17:23:12', '', 0);
+(2, 'Calculator for android', 'This is an important thing ever. This calculator has a nice design and can do all operations what you need. Made for android devices. It doesn\'t have any virus!', 'Android', 'image4.png', '2023-01-29 17:23:12', '', 0),
+(3, 'PulseTimer', 'Introducing Puls Timer, your go-to online tool for seamless time management. Set timers, enhance organization, and boost productivity effortlessly. Bid farewell to procrastination and embrace efficiency.', 'Web', 'image5-1.png', '2023-11-19 17:24:39', 'https://bogdansch.github.io/PulseTimer/', 1);
 
 -- --------------------------------------------------------
 
@@ -130,13 +131,13 @@ ALTER TABLE `games_table`
 -- AUTO_INCREMENT for table `soft_table`
 --
 ALTER TABLE `soft_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
