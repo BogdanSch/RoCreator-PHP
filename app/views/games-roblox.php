@@ -4,8 +4,8 @@
             <div class="about__content">
                 <h2>About my games on Roblox</h2>
                 <img src="./app/assets/img/roblox-intro.jfif" alt="img">
-                <p>I'm a roblox developer and I have an experience in creating Roblox games about 2 years. In this page
-                    you can find all of my roblox games which I have ever made.</p>
+                <p>I'm a Roblox developer and I have been creating my fascinating Roblox games for about 2,5 years. On
+                    this page, you will find all of the Roblox projects I have ever made.</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>
         </div>
@@ -18,10 +18,13 @@
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Games Intro Image">
                 <div class="content">
                     <h2>My games on Roblox</h2>
-                    <p>I've made a lot of games on Roblox which have lots of genres. All these game are
-                        playeble on all kinds of devices only what you need is Roblox. These games are
-                        made on my own. So if you wanna try it you can click More and support me on Roblox</p>
-                    <a class="btn btn--more" href="#roblox-games">More</a>
+                    <p>I've made a lot of games on Roblox which have lots of genres. All these games are playable on all
+                        kinds of devices only what you need is Roblox Launcher. These games are made by myself. So, if
+                        you wanna check them out, you can click More and support me on Roblox.
+                    </p>
+                    <div class="center-align">
+                        <a class="btn btn--more" href="#roblox-games">More</a>
+                    </div>
                 </div>
             </div>
         </div>

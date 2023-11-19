@@ -7,6 +7,9 @@
     flex-direction: row-reverse;
     align-items: center;
   }
+  &__title{
+    font-size: 40px;
+  }
   @media screen and (max-width: 770px) {
     & .content {
       max-width: 100%;

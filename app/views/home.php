@@ -7,7 +7,9 @@
                     Lua, HTML + CSS + JS + PHP and Java programming languages.
                     Follow me on this site to get know more about me.
                 </p>
-                <a class="btn btn--more" href="#about">More</a>
+                <div class="center-align">
+                    <a class="btn btn--more" href="#about">More</a>
+                </div>
             </div>
             <img src="./app/assets/img/image-intro.png" class="intro-img" alt="Intro Image">
         </div>
@@ -22,8 +24,11 @@
                 <p>I'm a middle developer. I don't have a team yet but the quality of my projects doesn't suffer from
                     that. I develop all my project on Roblox and Unity and Wordpress too, also I have my software for
                     android and desktop devices. Follow me on this site, if you wanna know more about me and my
-                    projects.</p>
-                <a class="btn btn--more" href="#games">More</a>
+                    projects.
+                </p>
+                <div class="center-align">
+                    <a class="btn btn--more" href="#games">More</a>
+                </div>
             </div>
         </div>
     </div>
@@ -35,11 +40,15 @@
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="img">
                 <div class="content">
                     <h2>My games on Roblox</h2>
-                    <p>I've created a bunch of fun games on Roblox over time, spanning various genres. The best part?
-                        You can play them on any device as long as you have Roblox installed.
+                    <p>I've created a bunch of fun and interesting projects on Roblox over this time, spanning various
+                        genres. The best part? You can play them on any device as long as you have your Roblox
+                        installed.
                         These games are my own creations, and I'd love for you to give them a try! Just click 'More' to
-                        start your gaming adventure.</p>
-                    <a class="btn btn--more" href="#roblox-games">More</a>
+                        start your gaming adventure.
+                    </p>
+                    <div class="center-align">
+                        <a class="btn btn--more" href="#roblox-games">More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,8 +66,10 @@
                     echo "Sorry, there're no games";
                 }
                 ?>
-                <a class="btn btn--more center-align" href="./games-roblox">Get More</a>
             </ul>
+            <div class="center-align">
+                <a class="btn btn--more center-align" href="./games-roblox">Get More</a>
+            </div>
         </div>
     </div>
 </section>
@@ -69,9 +80,13 @@
                 <img src="./app/assets/img/roblox-intro.jpg" class="col-img" alt="Roblox Game Image">
                 <div class="content">
                     <h2>My software for pc and android</h2>
-                    <p>These are my software for android and windows platforms which can be really useful
-                        for you!</p>
-                    <a class="btn btn--more" href="#pc-soft">More</a>
+                    <p>This is a short list of all my software for Android and Windows platforms which you may find
+                        useful to you, feel free to use it all! Just click 'More' to
+                        start your new productive day.
+                    </p>
+                    <div class="center-align">
+                        <a class="btn btn--more" href="#pc-soft">More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,8 +104,10 @@
                     echo "Sorry, there're no software";
                 }
                 ?>
-                <a class="btn btn--more center-align" href="./software">Get More</a>
             </ul>
+            <div class="center-align">
+                <a class="btn btn--more center-align" href="./software">Get More</a>
+            </div>
         </div>
     </div>
 </section>

@@ -143,44 +143,6 @@ $green: #1aff00;
     }
   }
 
-  .games {
-    &__img {
-      width: 50%;
-      left: -10%;
-    }
-    &__item {
-      width: 60%;
-      margin: 75px 0 85px 0;
-    }
-    &__list {
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-  .software {
-    &__img {
-      width: 50%;
-      left: -10%;
-    }
-    &__item {
-      width: 60%;
-      margin: 75px 0 85px 0;
-    }
-    &__list {
-      flex-direction: column;
-      justify-content: center;
-    }
-    &__introduction {
-      img {
-        width: 39%;
-        align-self: center;
-      }
-    }
-  }
-  .bg--img {
-    width: 130% !important;
-    left: -20px !important;
-  }
   .description {
     max-width: 250px;
   }
@@ -198,10 +160,7 @@ $green: #1aff00;
       height: 24px;
     }
   }
-  .type {
-    font-size: 9px;
-    margin-bottom: 10%;
-  }
+
   .introduction {
     flex-direction: column;
     margin: 80px auto;
@@ -226,53 +185,11 @@ $green: #1aff00;
       max-width: 50%;
     }
   }
-  .bg--img {
-    position: absolute;
-    width: 110% !important;
-    left: 10% !important;
-    margin-bottom: 350px;
-    margin-top: 350px;
-  }
-  .games {
-    &__list {
-      flex-direction: column;
-      justify-content: center;
-    }
-    &__img {
-      width: 55%;
-      left: -10%;
-    }
-    &__item {
-      margin: 60px 0 70px 0;
-    }
-  }
-  .software {
-    &__list {
-      flex-direction: column;
-      justify-content: center;
-    }
-    &__img {
-      width: 55%;
-      left: -10%;
-    }
-    &__item {
-      margin: 60px 0 70px 0;
-    }
-    &__introduction {
-      img {
-        width: 40%;
-      }
-    }
-  }
   h1 {
     font-size: 30px;
   }
   h5 {
     font-size: 16px;
-  }
-  .type {
-    font-size: 12px;
-    margin-bottom: 5%;
   }
 }
 //Theme

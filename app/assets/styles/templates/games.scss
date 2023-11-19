@@ -13,8 +13,7 @@
     position: relative;
   }
   &__list {
-    display: flex;
-    flex-direction: row;
+    @include flex-row();
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-between;
@@ -32,17 +31,65 @@
     position: relative;
     margin-bottom: 60px;
     margin-top: 50px;
+
     .description {
-      max-width: 230px;
-      display: flex;
-      flex-direction: column;
+      width: 49%;
+      @include flex-column();
       align-items: center;
       .text {
         margin-bottom: 15px;
       }
     }
-    .btn {
-      margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .games {
+    &__img {
+      width: 50%;
+      left: -10%;
+    }
+    &__list {
+      @include flex-column();
+      justify-content: center;
+      align-items: center;
+    }
+    &__item {
+      width: 60%;
+      margin: 80px 0;
+      .description {
+        min-width: 64%;
+      }
+    }
+    &__introduction {
+      img {
+        width: 38%;
+        align-self: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 770px) {
+  .games {
+    &__list {
+      @include flex-column();
+      justify-content: center;
+      align-items: center;
+    }
+    &__img {
+      width: 55%;
+      left: -10%;
+    }
+    &__item {
+      margin: 120px 0;
+      .description {
+        min-width: 60%;
+      }
+    }
+    &__introduction {
+      img {
+        width: 40%;
+      }
     }
   }
 }

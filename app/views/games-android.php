@@ -4,9 +4,10 @@
             <div class="about__content">
                 <h2>About my games for Android</h2>
                 <img src="./app/assets/img/android-device.jpg" alt="img">
-                <p>I'm an android games and software developer. I made all of my games in Android Studio and also Unity.
-                    In this page you can find
-                    all of our games for android devices.</p>
+                <p>
+                    Hello there! I create fun games and useful software for Android devices. I use cool tools like
+                    Android Studio and Unity to bring these apps to life. On this page, you can check out all the
+                    awesome games I've made for Android devices. Enjoy exploring!</p>
                 <a class="btn btn--more" href="#games">More</a>
             </div>
         </div>
@@ -20,8 +21,11 @@
                 <div class="content">
                     <h2>My games for Android</h2>
                     <p>I haven't made many games for android. These are all of the games which I have ever made and you
-                        check out them all on my website. You can download them fast and for free. </p>
-                    <a class="btn btn--more" href="#android-games">More</a>
+                        check out them all on my website. You can download them fast and for free.
+                    </p>
+                    <div class="center-align">
+                        <a class="btn btn--more" href="#android-games">More</a>
+                    </div>
                 </div>
             </div>
         </div>
