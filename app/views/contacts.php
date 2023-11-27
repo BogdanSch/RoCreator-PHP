@@ -36,3 +36,12 @@
         </div>
     </div>
 </section>
+<section class="contacts-map">
+    <div class="contacts-map__wrap">
+        <h2 class="center-align">My Location</h2>
+        <iframe class=" contacts-map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1558.7147272602856!2d4.9296190272700775!3d52.35746253176003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60971a6fc8131%3A0x9cf5d0a0577cad22!2sMontessori%20Lyceum%20Oostpoort!5e0!3m2!1suk!2snl!4v1700648870838!5m2!1suk!2snl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>

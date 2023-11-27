@@ -45,6 +45,13 @@
   }
 }
 
+.contacts-map {
+  margin: 80px 0;
+  &__iframe {
+    min-width: 100%;
+  }
+}
+
 .form-group {
   margin: 10px auto;
 
